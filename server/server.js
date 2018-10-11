@@ -45,6 +45,7 @@ io.on('connection', (socket) => {
 
     //  Reciving message from the client
     socket.on('createNewMessage', (newMessage, callback) => {
+        //  Emitting to all users
         io.emit('newMessage',
          {
             from: newMessage.from,

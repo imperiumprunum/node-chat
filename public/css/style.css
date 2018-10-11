@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 1.2rem;
+}
+
+ul, ol , li{
+  list-style: none;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15fr 1fr 2fr;
+    grid-template-rows: .5fr 10fr .7fr;
+    grid-template-areas:  
+    "title . ."
+    "chat-window users users"
+    "input input button";
+}
+
+.chat-title{
+    grid-area: title;
+    background-color: red;
+}
+
+.chat-window{
+    grid-area: chat-window;
+    display: flex;
+    align-items: center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e5799+100 */
+	background: #7db9e8; /* Old browsers */
+	background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #7db9e8 0%,#1e5799 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+}
+
+.chat-area{
+	padding: 1em;
+	height: 96%;
+	width: 96%;
+	background-color: white;
+	margin-left: 1em;
+}
+
+.users{
+    grid-area: users;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e5799+100 */
+	background: #7db9e8; /* Old browsers */
+	background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #7db9e8 0%,#1e5799 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+}
+
+
+.input{
+    grid-area: input;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-left: 1em;
+
+}
+
+.button{
+    grid-area: button;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-right: .3em;
+
+}
+
+.input input{
+	width: 100%;
+	height: 100%;
+	font-size: 1.5em;
+}
+
+.button button{
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: #1F4C69;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
